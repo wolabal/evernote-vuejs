@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import MarkdownEditor from '@/components/Markdown.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'markdown',
+    component: MarkdownEditor
+  },
+  {
+    path: '/home',
     name: 'home',
     component: Home
   },
